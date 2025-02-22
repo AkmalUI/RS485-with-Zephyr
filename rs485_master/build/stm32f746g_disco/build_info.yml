@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: C:/Users/ASUS/zephyrproject/rs485_master
+    source-dir: C:/Users/ASUS/zephyrproject/rs485_master
+  board:
+    name: stm32f746g_disco
+    qualifiers: stm32f746xx
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - C:/Users/ASUS/zephyrproject/rs485_master/dts/bindings
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/bindings
+    extra-user-files:
+     - c:/Users/ASUS/zephyrproject/rs485_master/boards/rs485_master.overlay
+    files:
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/boards/st/stm32f746g_disco/stm32f746g_disco.dts
+     - c:/Users/ASUS/zephyrproject/rs485_master/boards/rs485_master.overlay
+    include-dirs:
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/atmel/include
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/gigadevice/include
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/microchip/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/nuvoton/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/nxp/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/stm32/dts
+     - C:/Users/ASUS/zephyrproject/rs485_master/dts
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/include
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/include/zephyr
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/common
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/x86
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/xtensa
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/sparc
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/riscv
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/posix
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/nios2
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arm64
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arm
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arc
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts
+  kconfig:
+    extra-user-files:
+     - c:/Users/ASUS/zephyrproject/rs485_master/prj.conf
+    files:
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/boards/st/stm32f746g_disco/stm32f746g_disco_defconfig
+     - C:/Users/ASUS/zephyrproject/rs485_master/prj.conf
+     - c:/Users/ASUS/zephyrproject/rs485_master/prj.conf
+    user-files:
+     - C:/Users/ASUS/zephyrproject/rs485_master/prj.conf
+  toolchain:
+    name: zephyr
+    path: C:/Users/ASUS/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.0.0
+    zephyr-base: C:/Users/ASUS/.zephyr_ide/external/zephyr
+version: 0.1.0
+west:
+  command: C:\Users\ASUS\.zephyr_ide\.venv\Scripts\west build -b stm32f746g_disco c:\Users\ASUS\zephyrproject\rs485_master -p --build-dir c:\Users\ASUS\zephyrproject\rs485_master\build\stm32f746g_disco -- -DBOARD_ROOT=C:\Users\ASUS\.zephyr_ide\external\zephyr -DEXTRA_CONF_FILE=c:\Users\ASUS\zephyrproject\rs485_master\prj.conf; -DEXTRA_DTC_OVERLAY_FILE=c:\Users\ASUS\zephyrproject\rs485_master\boards\rs485_master.overlay;
+  topdir: c:\Users\ASUS\zephyrproject
+  version: 1.3.0

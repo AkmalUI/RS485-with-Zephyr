@@ -1,0 +1,10 @@
+description: untuk switching transmit dan receive
+
+compatible: "driver-switch"
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+    description: |
+      connectnya ke RE pin

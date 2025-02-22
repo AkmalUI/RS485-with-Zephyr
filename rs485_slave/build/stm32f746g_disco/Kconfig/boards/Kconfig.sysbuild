@@ -1,0 +1,2 @@
+# Load Sysbuild board Kconfig descriptions.
+osource "C:/Users/ASUS/.zephyr_ide/external/zephyr/boards/st/stm32f746g_disco/Kconfig.sysbuild"

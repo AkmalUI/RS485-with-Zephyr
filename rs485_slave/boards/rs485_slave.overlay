@@ -1,0 +1,6 @@
+/ {
+    rs_driver: rs_driver {
+        compatible = "driver-switch";
+        gpios = <&gpiog 7 GPIO_ACTIVE_HIGH>;
+    };
+};

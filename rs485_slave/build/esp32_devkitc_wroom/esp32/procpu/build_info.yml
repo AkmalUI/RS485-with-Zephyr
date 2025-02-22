@@ -1,0 +1,58 @@
+cmake:
+  application:
+    configuration-dir: C:/Users/ASUS/zephyrproject/rs485_slave
+    source-dir: C:/Users/ASUS/zephyrproject/rs485_slave
+  board:
+    name: esp32_devkitc_wroom
+    qualifiers: esp32/procpu
+    revision: 
+  devicetree:
+    bindings-dirs:
+     - C:/Users/ASUS/zephyrproject/rs485_slave/dts/bindings
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/bindings
+    extra-user-files:
+     - c:/Users/ASUS/zephyrproject/rs485_slave/boards/rs485_slave.overlay
+    files:
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu.dts
+     - c:/Users/ASUS/zephyrproject/rs485_slave/boards/rs485_slave.overlay
+    include-dirs:
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/atmel/include
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/gigadevice/include
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/microchip/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/nuvoton/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/nxp/dts
+     - C:/Users/ASUS/.zephyr_ide/external/modules/hal/stm32/dts
+     - C:/Users/ASUS/zephyrproject/rs485_slave/dts
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/include
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/include/zephyr
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/common
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/x86
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/xtensa
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/sparc
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/riscv
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/posix
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/nios2
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arm64
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arm
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts/arc
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/dts
+  kconfig:
+    extra-user-files:
+     - c:/Users/ASUS/zephyrproject/rs485_slave/prj.conf
+    files:
+     - C:/Users/ASUS/.zephyr_ide/external/zephyr/boards/espressif/esp32_devkitc_wroom/esp32_devkitc_wroom_procpu_defconfig
+     - C:/Users/ASUS/zephyrproject/rs485_slave/prj.conf
+     - c:/Users/ASUS/zephyrproject/rs485_slave/prj.conf
+    user-files:
+     - C:/Users/ASUS/zephyrproject/rs485_slave/prj.conf
+  toolchain:
+    name: zephyr
+    path: C:/Users/ASUS/zephyr-sdk-0.17.0
+  zephyr:
+    version: 4.0.0
+    zephyr-base: C:/Users/ASUS/.zephyr_ide/external/zephyr
+version: 0.1.0
+west:
+  command: C:\Users\ASUS\.zephyr_ide\.venv\Scripts\west build -b esp32_devkitc_wroom/esp32/procpu c:\Users\ASUS\zephyrproject\rs485_slave -p --build-dir c:\Users\ASUS\zephyrproject\rs485_slave\build\esp32_devkitc_wroom\esp32\procpu -- -DBOARD_ROOT=C:\Users\ASUS\.zephyr_ide\external\zephyr -DEXTRA_CONF_FILE=c:\Users\ASUS\zephyrproject\rs485_slave\prj.conf; -DEXTRA_DTC_OVERLAY_FILE=c:\Users\ASUS\zephyrproject\rs485_slave\boards\rs485_slave.overlay;
+  topdir: c:\Users\ASUS\zephyrproject
+  version: 1.3.0

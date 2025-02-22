@@ -1,0 +1,7 @@
+west:
+  command: C:\Users\ASUS\.zephyr_ide\.venv\Scripts\west build -b stm32f746g_disco
+    c:\Users\ASUS\zephyrproject\rs485_slave -p --build-dir c:\Users\ASUS\zephyrproject\rs485_slave\build\stm32f746g_disco
+    -- -DBOARD_ROOT=C:\Users\ASUS\.zephyr_ide\external\zephyr -DEXTRA_CONF_FILE=c:\Users\ASUS\zephyrproject\rs485_slave\prj.conf;
+    -DEXTRA_DTC_OVERLAY_FILE=c:\Users\ASUS\zephyrproject\rs485_slave\boards\rs485_slave.overlay;
+  topdir: c:\Users\ASUS\zephyrproject
+  version: 1.3.0

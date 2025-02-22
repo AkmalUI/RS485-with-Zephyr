@@ -1,0 +1,10 @@
+/ {
+    rs_driver: rs_driver {
+        compatible = "driver-switch";
+        gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
+    };
+};
+
+&uart2 {
+    status = "okay";
+};
