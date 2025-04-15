@@ -1,12 +1,6 @@
 ## RS485 Testing using MAX485 Module in Zephyr Framework.
 
-Using two MCU, ESP32 and STM32, sending message to each other.
-sending Message from ESP32: "Hello From ESP32!" To STM32.
-sending Message from STM32: "Hello From STM32!" To ESP32.
-Every second
-Auto 
-
-### Wiring Diagram
-
-### How to use
-
+Using two MCUs, ESP32 and STM32, to send messages to each other.
+The ESP32 sends the message: "Hello from ESP32!" to the STM32.
+The STM32 sends the message: "Hello from STM32!" to the ESP32.
+Messages are exchanged automatically every second.
